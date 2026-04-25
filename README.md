@@ -1,17 +1,19 @@
 # Simple Todo App
 
-Give a brief description of the project here. Feel free to give it a different name.
+A simple Todo App where users can add tasks, set up optional due dates, mark them as completed and delete when finished. 
 
 ## Functionality
 
-Give a more detailed explanation of the project and its functionality.
+The Todo App project a task management app, where users can keep track of tasks that need to be done. Users can add new todo tasks through a pop-up form, add opitonal due dates and tasks are in list format. Once tasks are added, users can mark them when the task has been completed. This can be done with a checkbox or removed by a delete button. 
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
-
+- JavaScript classes. 
+- DOM manipulation to create and update todo items. 
+- Form validation with a reusable 'FormValidator' class. 
+- Event Listeners for handling user interactions.
 ## Deployment
 
 This project is deployed on GitHub Pages:
 
-- ADD LINK HERE
+- (https://github.com/kennypixelpoet/se_project_todo-app#)
