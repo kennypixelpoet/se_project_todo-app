@@ -8,6 +8,10 @@
     this._deleteBtn.addEventListener("click", () => {
       this._element.remove();
     });
+
+    this._checkboxEl.addEventListener("change", () => {
+      this._data.completed = this._checkboxEl.checked;
+    });
   }
 
   getView() {

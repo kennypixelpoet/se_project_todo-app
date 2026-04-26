@@ -2,7 +2,7 @@ export class FormValidator {
     constructor(settings, formElement) {
         this._settings = settings;
         this._formElement = formElement;
-        this._inputList = Array.from (
+        this._inputList = Array.from(
             this._formElement.querySelectorAll(this._settings.inputSelector)
         );
         this._buttonElement = this._formElement.querySelector(
@@ -64,12 +64,11 @@ _hideInputError(inputElement) {
     }
 
     resetValidation() {
-        this._formElement.reset();
+    this._formElement.reset();
         
-        this._inputList.forEach((inputElement) => {
-            this._hideInputError(inputElement);
+    this._inputList.forEach((inputElement) => {
+        this._hideInputError(inputElement);
     });
-
     this._toggleButtonState();
 }
 
