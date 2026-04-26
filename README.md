@@ -12,8 +12,9 @@ The Todo App project a task management app, where users can keep track of tasks 
 - DOM manipulation to create and update todo items. 
 - Form validation with a reusable 'FormValidator' class. 
 - Event Listeners for handling user interactions.
+
 ## Deployment
 
 This project is deployed on GitHub Pages:
 
-- (https://github.com/kennypixelpoet/se_project_todo-app#)
+- [Live Demo](https://kennypixelpoet.github.io/se_project_todo-app/)
