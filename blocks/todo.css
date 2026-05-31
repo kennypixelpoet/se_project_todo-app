@@ -70,6 +70,15 @@
   cursor: pointer;
 }
 
+.todo__delete-btn:hover {
+  opacity: 0.7;
+}
+
+.todo__delete-btn:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
 .todo__delete-btn::before {
   content: "Delete";
 }
@@ -101,6 +110,10 @@
     background-image: url(../images/delete-icon.svg);
     width: 24px;
     height: 24px;
+  }
+
+  .todo__delete-btn:hover {
+    opacity: 0.6;
   }
 
   .todo__delete-btn::before {

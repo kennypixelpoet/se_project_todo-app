@@ -2,14 +2,18 @@
   constructor(data, selector) {
     this._data = data;
     this._selector = selector;
+    this._handleDeleteTodo = this._handleDeleteTodo;
+    this._handleCheckTodo = this._handleCheckTodo;
   }
 
   _setEventListeners() {
     this._deleteBtn.addEventListener("click", () => {
+      this._handleDeleteTodo(this._data);
       this._element.remove();
     });
 
     this._checkboxEl.addEventListener("change", () => {
+      this._data.completed = this._checkboxEl.checked;
       this._data.completed = this._checkboxEl.checked;
     });
   }
