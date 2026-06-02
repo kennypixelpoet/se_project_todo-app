@@ -1,5 +1,5 @@
  export class Todo {
-  constructor(data, selector) {
+  constructor(data, selector, handleDeleteTodo, handleCheckTodo) {
     this._data = data;
     this._selector = selector;
     this._handleDeleteTodo = this._handleDeleteTodo;
@@ -14,7 +14,7 @@
 
     this._checkboxEl.addEventListener("change", () => {
       this._data.completed = this._checkboxEl.checked;
-      this._data.completed = this._checkboxEl.checked;
+      this._handleCheckTodo(this._checkboxEl.checked);
     });
   }
 
