@@ -2,8 +2,8 @@
   constructor(data, selector, handleDeleteTodo, handleCheckTodo) {
     this._data = data;
     this._selector = selector;
-    this._handleDeleteTodo = this._handleDeleteTodo;
-    this._handleCheckTodo = this._handleCheckTodo;
+    this._handleDeleteTodo = handleDeleteTodo;
+    this._handleCheckTodo = handleCheckTodo;
   }
 
   _setEventListeners() {
