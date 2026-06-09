@@ -5,8 +5,12 @@ export default class PopupWithForm extends Popup {
     super(popupSelector);
 
     this._handleFormSubmit = handleFormSubmit;
-    this._form = this._popupElement.querySelctor(".popup__form");
-    this._inputList = Array.from(this._form.querySelctorAll(".popup__input"));
+    this._form = this._popupElement.querySelector(".popup__form");
+    this._inputList = Array.from(this._form.querySelectorAll(".popup__input"));
+  }
+
+  getFrom() {
+    return this._form;
   }
 
   _getInputValues() {
@@ -24,7 +28,8 @@ export default class PopupWithForm extends Popup {
 
     this._form.addEventListener("submit", (evt) => {
       evt.preventDefault();
-
+      
+      const inputValues = this._getInputValues();
       this._handleFormSubmit(inputValues);
     });
   }

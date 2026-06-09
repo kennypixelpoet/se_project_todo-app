@@ -15,7 +15,7 @@ export default class Popup {
 
     _handleEscapeClose = (evt) => {
         if (evt.key === "Escape") {
-            this.close();
+          this.close();
         }
     };
     
@@ -23,7 +23,7 @@ export default class Popup {
         const closeButton = this._popupElement.querySelector(".popup__close");
         
         closeButton.addEventListener("click", () => {
-            this.close();
+          this.close();
         });
 
     this._popupElement.addEventListener("click", (evt) => {
